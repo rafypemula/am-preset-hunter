@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: am-link-hunter
+    runtime: docker
+    plan: free
+    healthCheckPath: /

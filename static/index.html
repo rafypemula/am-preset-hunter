@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="theme-color" content="#090d19"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d19">
+<title>AM LINK HUNTER — @rafyftmca</title>
+<style>
+:root{--bg:#090d19;--panel:#121a2c;--panel2:#18233a;--line:#293958;--txt:#f2f5ff;--muted:#93a1bf;--violet:#8d79ff;--cyan:#52d9ed;--green:#53e0ad;--red:#ff718d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#28265d 0,transparent 45%),var(--bg);color:var(--txt);font:15px/1.5 Inter,system-ui,Arial,sans-serif;min-height:100vh}
+.wrap{width:min(960px,100%);margin:auto;padding:24px 16px 18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 24px}.brand{display:flex;align-items:center;gap:12px}.logo{width:45px;height:45px;border-radius:15px;background:linear-gradient(135deg,var(--violet),var(--cyan));display:grid;place-items:center;color:#080d1a;font-size:22px;font-weight:900;box-shadow:0 8px 30px #8d79ff55}.brand h1{font-size:clamp(20px,4vw,29px);line-height:1;margin:0;letter-spacing:.8px}.brand p{margin:5px 0 0;color:var(--muted);font-size:11px;letter-spacing:2px}.pill{border:1px solid #35506b;border-radius:99px;padding:6px 10px;color:#8de8d3;font-size:11px;white-space:nowrap}
+.hero{margin-bottom:18px}.hero h2{font-size:clamp(25px,6vw,42px);line-height:1.08;margin:0 0 10px;letter-spacing:-1px}.grad{background:linear-gradient(90deg,#b8aaff,#64e4ee);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{margin:0;color:var(--muted);max-width:650px}
+.card{background:linear-gradient(145deg,#151f34ee,#101728f2);border:1px solid var(--line);border-radius:20px;padding:18px;margin:14px 0;box-shadow:0 16px 45px #0003}.label{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:9px;font-size:13px;font-weight:750;letter-spacing:.5px}.label small{color:var(--muted);font-weight:500;letter-spacing:0}
+.inputrow{display:flex;gap:9px}.input{width:100%;min-width:0;background:#0a1120;border:1px solid #2b3a58;border-radius:13px;padding:14px;color:var(--txt);font:inherit;outline:none}.input:focus{border-color:var(--violet);box-shadow:0 0 0 3px #8d79ff22}
+.btn{border:0;border-radius:13px;padding:13px 17px;font:inherit;font-weight:800;cursor:pointer;color:#0b1020;background:linear-gradient(100deg,#a795ff,#64deee);transition:.2s;white-space:nowrap}.btn:disabled{opacity:.5;cursor:not-allowed}.btn.secondary{background:#263451;color:#e7ecff;border:1px solid #3a4a6b}.btn.ghost{background:transparent;color:#bcb2ff;border:1px solid #6254ad}
+.controls{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.hint{font-size:12px;color:var(--muted);margin:12px 2px 0}.status{display:none;margin-top:14px;padding:12px 13px;border-radius:12px;background:#0b1425;border:1px solid #2c3d5d;color:#b8c8e8;font-size:13px}.status.show{display:block}.status.error{border-color:#773d56;color:#ff9db0}.status.ok{border-color:#286957;color:#8ce8c7}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.stat{background:#0c1424;border:1px solid #263653;border-radius:14px;padding:12px}.stat b{display:block;font-size:22px}.stat span{font-size:11px;color:var(--muted)}
+.results-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.results-head h3{margin:0;font-size:17px}.results{display:grid;gap:11px;margin-top:14px}.empty{padding:28px 12px;text-align:center;color:var(--muted);border:1px dashed #344462;border-radius:15px}.result{background:#0b1424;border:1px solid #293957;border-radius:15px;padding:14px}.resulttop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}.tag{font-size:10px;font-weight:800;letter-spacing:.7px;padding:4px 8px;border-radius:99px;background:#173d39;color:#75e4bd}.tag.other{background:#342b52;color:#c3b6ff}.comment{white-space:pre-wrap;overflow-wrap:anywhere;color:#e7ecfb;font-size:14px;margin:7px 0 10px}.url{display:block;color:#9eabff;overflow-wrap:anywhere;font-size:12px;text-decoration:none;margin:8px 0}.url:hover{text-decoration:underline}.resultactions{display:flex;gap:8px;flex-wrap:wrap}.resultactions .btn{font-size:12px;padding:9px 12px}.fine{color:var(--muted);font-size:11px;margin-top:10px}.footer{text-align:center;padding:24px 0 8px;color:#7583a1;font-size:12px;letter-spacing:1.2px}.footer b{color:#c3b7ff}
+.spinner{display:inline-block;width:13px;height:13px;border:2px solid #ffffff55;border-top-color:white;border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:7px}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:620px){.wrap{padding:18px 12px}.card{padding:14px;border-radius:17px}.inputrow{flex-direction:column}.inputrow .btn{width:100%}.top{align-items:flex-start}.pill{font-size:9px}.stats{gap:6px}.stat{padding:10px}.stat b{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand"><div class="logo">AM</div><div><h1>LINK HUNTER</h1><p>TIKTOK COMMENT SCANNER</p></div></div>
+  <div class="pill">● SCANNER READY</div>
+</header>
+<section class="hero"><h2>Find your next <span class="grad">preset.</span></h2><p>Masukkan tautan video TikTok. Sistem akan memindai komentar, mendeteksi link preset, lalu menampilkan komentar asli agar bisa langsung disalin.</p></section>
+<section class="card">
+  <div class="label">VIDEO SOURCE <small>Paste public TikTok URL</small></div>
+  <div class="inputrow"><input id="videoUrl" class="input" type="url" placeholder="https://www.tiktok.com/@username/video/..." autocomplete="url"><button id="scanBtn" class="btn">⚡ SCAN COMMENTS</button></div>
+  <div class="controls"><button id="demoBtn" class="btn secondary">Coba tampilan demo</button><button id="clearBtn" class="btn ghost">Reset</button></div>
+  <div class="hint">Pemindaian membutuhkan server lokal dan sesi TikTok yang valid. Video privat, komentar nonaktif, atau pembatasan TikTok dapat membuat scan gagal.</div>
+  <div id="status" class="status" role="status"></div>
+</section>
+<section class="card">
+  <div class="results-head"><h3>Hasil pemindaian</h3><button id="copyAllBtn" class="btn secondary" disabled>Salin semua</button></div>
+  <div class="stats"><div class="stat"><b id="totalComments">—</b><span>KOMENTAR DIPROSES</span></div><div class="stat"><b id="totalLinks">0</b><span>LINK DITEMUKAN</span></div><div class="stat"><b id="totalPresets">0</b><span>FILE PRESET</span></div></div>
+  <div id="results" class="results"><div class="empty">🔎<br>Belum ada hasil.<br>Tempel link TikTok lalu mulai scan.</div></div>
+  <p class="fine">Link ditampilkan apa adanya dari komentar. Periksa keamanan tautan sebelum mengunduh file.</p>
+</section>
+<footer class="footer">CRAFTED WITH CARE · <b>@rafyftmca</b></footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);let currentResults=[];
+function showStatus(msg,type=''){const el=$('status');el.className='status show '+type;el.textContent=msg}
+function clearStatus(){$('status').className='status';$('status').textContent=''}
+function isTikTokUrl(s){try{const u=new URL(s);return /(^|\.)tiktok\.com$/i.test(u.hostname)}catch{return false}}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function looksPreset(url){return /\.(xml|am|zip)(?:$|[?#])/i.test(url)||/alight|motion|preset|drive\.google|mediafire|mega\.nz|dropbox/i.test(url)}
+function render(items){
+ currentResults=items;$('totalLinks').textContent=items.length;$('totalPresets').textContent=items.filter(x=>x.is_preset).length;$('copyAllBtn').disabled=!items.length;
+ const root=$('results');root.innerHTML='';
+ if(!items.length){root.innerHTML='<div class="empty">Belum ditemukan link di komentar yang berhasil dipindai.</div>';return}
+ items.forEach((item,i)=>{
+  const el=document.createElement('article');el.className='result';
+  const tag=item.is_preset?'<span class="tag">PRESET / FILE</span>':'<span class="tag other">LINK KOMENTAR</span>';
+  el.innerHTML=`<div class="resulttop">${tag}<span class="fine">#${i+1}</span></div><div class="comment"></div><a class="url" target="_blank" rel="noopener noreferrer"></a><div class="resultactions"><button class="btn copy-one">SALIN LINK + KOMENTAR</button><button class="btn secondary copy-url">SALIN LINK</button></div>`;
+  el.querySelector('.comment').textContent=item.comment||'(Komentar tidak tersedia)';
+  el.querySelector('.url').textContent=item.url;el.querySelector('.url').href=item.url;
+  el.querySelector('.copy-one').onclick=()=>copyText(`Komentar: ${item.comment||''}\nLink: ${item.url}`);
+  el.querySelector('.copy-url').onclick=()=>copyText(item.url);
+  root.append(el);
+ });
+}
+async function copyText(s){try{await navigator.clipboard.writeText(s);showStatus('Berhasil disalin.','ok')}catch{const t=document.createElement('textarea');t.value=s;document.body.append(t);t.select();document.execCommand('copy');t.remove();showStatus('Berhasil disalin.','ok')}}
+$('scanBtn').onclick=async()=>{
+ const url=$('videoUrl').value.trim();if(!isTikTokUrl(url)){showStatus('Masukkan URL TikTok yang valid terlebih dahulu.','error');return}
+ clearStatus();$('scanBtn').disabled=true;$('scanBtn').innerHTML='<span class="spinner"></span>SCANNING...';$('totalComments').textContent='…';
+ try{
+  const r=await fetch('/api/scan',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url})});
+  const data=await r.json();if(!r.ok)throw new Error(data.detail||'Scan gagal.');
+  $('totalComments').textContent=data.comments_scanned??0;render(data.results||[]);
+  showStatus(data.message||'Pemindaian selesai.','ok');
+ }catch(e){$('totalComments').textContent='—';showStatus(e.message+' Pastikan server berjalan dan sesi TikTok sudah disiapkan.','error')}
+ finally{$('scanBtn').disabled=false;$('scanBtn').textContent='⚡ SCAN COMMENTS'}
+};
+$('copyAllBtn').onclick=()=>copyText(currentResults.map(x=>`Komentar: ${x.comment||''}\nLink: ${x.url}`).join('\n\n--------------------\n\n'));
+$('clearBtn').onclick=()=>{$('videoUrl').value='';$('totalComments').textContent='—';render([]);clearStatus();$('results').innerHTML='<div class="empty">🔎<br>Belum ada hasil.<br>Tempel link TikTok lalu mulai scan.</div>'};
+$('demoBtn').onclick=()=>{$('totalComments').textContent='128';render([{comment:'Preset XML nya kak, tinggal import ke Alight Motion ✨',url:'https://example.com/preset.xml',is_preset:true},{comment:'Ini link preset shake 5MB, semoga cocok!',url:'https://example.com/shake.zip',is_preset:true}]);showStatus('Mode demo: ini contoh tampilan, bukan data TikTok asli.','ok')};
+render([]);
+</script>
+</body></html>
